@@ -36,6 +36,14 @@ func main() {
 }
 ```
 
+**When Containerizing**
+
+```dockerfile
+# libpcap must be installed prior to building your application
+# in order for it to build properly or at all.
+RUN apt-get update && apt-get install -y libpcap-dev
+```
+
 **Issues & Requests**
 
 Please open an issue if you have something you'd like integrated or if you're unable to fix something. PRs welcome if you are contributing something useful.
