@@ -13,7 +13,8 @@
 - provide more data from incoming requests (if seen fit in the future).
 
 
-Example Usage
+**Example Usage**
+
 ```go
 package main
 
