@@ -35,3 +35,7 @@ func main() {
 	router.Listen(":8080")
 }
 ```
+
+**Issues & Requests**
+
+Please open an issue if you have something you'd like integrated or if you're unable to fix something. PRs welcome if you are contributing something useful.
