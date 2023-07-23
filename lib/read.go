@@ -29,7 +29,7 @@ func StartListening(networkInterface string) error {
 used for an incoming request in a handler,
 pass the Ip address of the request to get tcp data, and fingerprint (created by hashing parts of data)
 */
-func TCP(ipAddress string) (*Fingerprint, error) {
+func RequestFP(ipAddress string) (*Fingerprint, error) {
 	defer FINGERPRINT_MUTEXT.Unlock()
 	FINGERPRINT_MUTEXT.Lock()
 	if fingerprint, ok := FINGERPRINTS[ipAddress]; ok {
